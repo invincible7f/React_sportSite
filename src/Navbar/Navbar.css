@@ -8,27 +8,46 @@ nav {
 .LogoName {
   display: flex;
   margin: 20px;
+  margin-left: 40px;
+  margin-top: 25px;
   width: 200px;
-  background-color: red;
   height: 40px; }
   .LogoName img {
-    margin-top: 0px; }
+    margin-top: 0px;
+    rotate: 50deg; }
   .LogoName h2 {
     margin-top: 0px;
     color: white; }
 
 .navMenu {
   display: flex;
-  margin-left: 900px; }
+  margin-left: 860px; }
   .navMenu li {
     cursor: pointer;
     display: inline;
     margin: 20px;
     position: relative;
-    top: 10px; }
+    top: -5px; }
+    .navMenu li img {
+      rotate: 50deg;
+      scale: 0.4; }
     .navMenu li a {
+      position: relative;
       color: white;
       text-decoration: none;
-      font-size: 18px; }
+      font-size: 18px;
+      top: -27px;
+      left: -15px; }
+    .navMenu li .shedul {
+      rotate: 0deg; }
+  .navMenu button {
+    height: 40px;
+    width: 110px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 0px;
+    margin-top: 22px;
+    background-color: #ee3b1c;
+    color: white; }
 
 /*# sourceMappingURL=Navbar.css.map */

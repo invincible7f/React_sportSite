@@ -13,14 +13,15 @@ display: flex;
 .LogoName{
 display: flex;
 margin: 20px;
+margin-left: 40px;
+margin-top: 25px;
 width: 200px;
-background-color: red;
 height: 40px;
 
 
 img{
   margin-top: 0px;
-
+  rotate: 50deg;
 }
 
 
@@ -36,7 +37,7 @@ h2{
 
 .navMenu{
 display: flex;
-margin-left: 900px;
+margin-left: 860px;
 
 li{
 
@@ -45,13 +46,38 @@ cursor: pointer;
 display: inline;
 margin: 20px;
 position: relative;
-top:10px;
-a{
+top: -5px;
 
+img{
+  rotate: 50deg;
+  scale: 0.4;
+
+}
+a{
+  position: relative;
   color: white;
   text-decoration: none;
   font-size: 18px;
+   top: -27px;
+   left: -15px;
+}
+
+.shedul{
+  rotate: 0deg;
+
+
 }
 }
 
+button{
+
+ height: 40px;
+ width: 110px;
+ border-radius: 5px;
+ font-size: 16px;
+ border: 0px;
+ margin-top: 22px;
+ background-color: rgb(238, 59, 28);
+ color:white;
+}
 }
