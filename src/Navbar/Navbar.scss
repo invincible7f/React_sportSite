@@ -1,0 +1,57 @@
+
+
+
+
+nav{
+display: flex;
+  height: 80px;
+  background-color: rgb(17, 17, 17);
+  flex-wrap: wrap;
+  cursor: default;
+}
+
+.LogoName{
+display: flex;
+margin: 20px;
+width: 200px;
+background-color: red;
+height: 40px;
+
+
+img{
+  margin-top: 0px;
+
+}
+
+
+h2{
+  margin-top: 0px;
+  color: white;
+}
+
+
+
+}
+
+
+.navMenu{
+display: flex;
+margin-left: 900px;
+
+li{
+
+cursor: pointer;
+
+display: inline;
+margin: 20px;
+position: relative;
+top:10px;
+a{
+
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+}
+
+}
