@@ -1,7 +1,7 @@
 nav {
   display: flex;
   height: 80px;
-  background-color: #111111;
+  background-color: #161616;
   flex-wrap: wrap;
   cursor: default; }
 
@@ -38,7 +38,7 @@ nav {
       font-size: 18px;
       top: -27px;
       left: -15px; }
-    .navMenu li .shedul {
+    .navMenu li .list {
       rotate: 0deg; }
   .navMenu button {
     height: 40px;
