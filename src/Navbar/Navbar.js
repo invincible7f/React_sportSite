@@ -14,15 +14,19 @@ class Navbar extends React.Component{
   trainingDropMenuOpcity:0, 
   trainingDropMenuTop:'-600px', 
   imageNutrition:'images/nutrition.png',
-  imageShedul:'images/shedul.png'
-  
+  nutritionDropMenuOpcity:0, 
+  nutritionDropMenuTop:'-600px',
+  imageShedul:'images/shedul.png',
+  shedulDropMenuOpcity:0,
+  shedulDropMenuTop:'-600'
   }
 
   }
 
 
+// -------------------------------------------------------
 
- changeColor = (e) => {
+changeColor = (e) => {
 
   let bright =150
   if(e.target.name =="trainings"){
@@ -52,7 +56,9 @@ class Navbar extends React.Component{
 
  }
 
- backColor = (e)=>{
+// ------------------------------------------------------
+ 
+backColor = (e)=>{
    
   if(e.target.name =="trainings"){
     console.log('h')
@@ -88,6 +94,7 @@ class Navbar extends React.Component{
     e.target.style.filter ="brightness(100%)"
 
  }
+// ------------------------------------------------
 
 dropdownMenuMouseEnter = (e)=>{
   this.setState({trainingDropMenuOpcity:1})
@@ -102,6 +109,7 @@ dropdownMenuMouseEnter = (e)=>{
  console.log('hi')
 
  }
+// ------------------------------------------------
 
 render(){
 
@@ -117,6 +125,7 @@ render(){
        <ul >
 
         <li ><img src={this.state.imageTraining} alt='trainings' className='dumbbell'/><a href='#' name="trainings" className ="reference" onMouseEnter={this.changeColor} onMouseLeave={this.backColor}>Тренировки</a>
+        {/* <DropdownMenu op ={this.state.trainingDropMenuOpcity} top ={this.state.trainingDropMenuTop}/> */}
         <ul className='dropDownMenu' style={{opacity: this.state.trainingDropMenuOpcity, top:this.state.trainingDropMenuTop}} onMouseEnter={this.dropdownMenuMouseEnter} onMouseLeave={this.dropdownMenuMouseLeave}>
           <li><a href='#'>Бодибилдинг</a></li>
           <li><a href='#'>Кроссфит</a></li>

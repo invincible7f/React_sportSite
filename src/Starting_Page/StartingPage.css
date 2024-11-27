@@ -1,0 +1,57 @@
+
+section{
+  display: flex;
+  background-image: url(../../public/images/photo-1534438327276-14e5300c3a48.jpg);
+  background-size: cover;
+  height: 860px;
+  
+
+}
+
+.darkLayer{
+position: absolute;
+ background-color: black;
+ height: 860px;
+ width: 100%;
+ opacity: 0.3;
+ z-index: 0;
+
+}
+
+
+.startingPageContainer{
+ position: relative;
+ margin: 32px;
+ margin-top: 200px;
+ color: white;
+ z-index: 1;
+ cursor:default;
+
+} 
+
+.startingPageContainer h1{
+
+ font-size:70px;
+
+
+}
+
+.startingPageContainer p{
+ margin-top: -30px;
+ font-size: 25px;
+ width: 800px;
+
+}
+
+.startingPageContainer button{
+
+ width: 200px;
+ height: 50px;
+ margin-top: 10px;
+ border-radius: 8px;
+ font-size: 18px;
+ border: 0px;
+ color: white;
+ background-color: rgb(238, 59, 28);
+ 
+}

@@ -7,7 +7,11 @@ class DropdownMenu extends React.Component {
 constructor(props){
   super(props)
  
- 
+ this.state ={
+  trainingDropDownMenuOpacity:this.props.op,
+  trainingDropMenuTop:this.props.top
+
+ }
 
 }
   showMenu =(e)=>{
@@ -25,7 +29,7 @@ constructor(props){
   return (
  
 
-<ul className='dropDownMenu' style={{opacity:this.props.op}} onMouseEnter={this.showMenu} onMouseLeave={this.hideMenu}>
+<ul className='dropDownMenu' style={{opacity:this.props.op, top:this.props.top}} onMouseEnter={this.showMenu} onMouseLeave={this.hideMenu}>
           <li><a href='#'>Бодибилдинг</a></li>
           <li><a href='#'>Кроссфит</a></li>
           <li><a href='#'>Калистеника</a></li>

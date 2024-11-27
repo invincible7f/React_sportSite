@@ -2,8 +2,9 @@
   display: block;
   position: absolute;
   width: 150px;
-  height: 287px;
+  height: 300px;
   left: 40px;
+  top: -598px;
   background-color: #232323;
   z-index: 5; }
   .dropDownMenu li {
