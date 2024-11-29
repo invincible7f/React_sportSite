@@ -14,11 +14,11 @@ class Navbar extends React.Component{
   trainingDropMenuOpcity:0, 
   trainingDropMenuTop:'-600px', 
   imageNutrition:'images/nutrition.png',
-  nutritionDropMenuOpcity:0, 
-  nutritionDropMenuTop:'-600px',
+  nutritionDropDownMenuOpcity:0, 
+  nutritionDropDownMenuTop:'-600px',
   imageShedul:'images/shedul.png',
   shedulDropMenuOpcity:0,
-  shedulDropMenuTop:'-600'
+  shedulDropMenuTop:'-600px'
   }
 
   }
@@ -38,9 +38,11 @@ changeColor = (e) => {
   }
 
  else if(e.target.name =="nutrition"){
-    this.setState({ imageNutrition:"images/nutrition_r.png"})
+    this.setState({imageNutrition:"images/nutrition_r.png"})
     document.querySelector(".meat").style.filter =` brightness(${bright}%)`
-    
+   
+    this.setState({nutritionDropDownMenuOpcity:1})
+    this.setState({nutritionDropDownMenuTop:'-8px'})
 
   }
 
@@ -72,7 +74,9 @@ backColor = (e)=>{
   else if(e.target.name =="nutrition"){
      this.setState({imageNutrition:"images/nutrition.png"})
      document.querySelector(".meat").style.filter ="brightness(100%)"
-
+     this.setState({nutritionDropDownMenuOpcity:0})
+    this.setState({nutritionDropDownMenuTop:'-600px'})
+     
  
    }
  
@@ -109,10 +113,27 @@ dropdownMenuMouseEnter = (e)=>{
  console.log('hi')
 
  }
+
+//  ----------------------------------------------------
+
+ nutritionDropDownMenuMouseEnter = (e)=>{
+  this.setState({nutritionDropDownMenuOpcity:1})
+  this.setState({nutritionDropDownMenuTop:'-8px'})
+
+ }
+ 
+
+ nutritionDropDownMenuMouseLeave = (e)=>{
+  this.setState({nutritionDropDownMenuOpcity:0})
+  this.setState({nutritionDropDownMenuTop:'-600px'})
+  
+ }
+ 
 // ------------------------------------------------
 
 render(){
 
+  let nutritionDropDownMenu = ['Диета', 'Витамины', 'Минералы']
     return(
      <nav>
       <div className='LogoName'>
@@ -133,7 +154,15 @@ render(){
           <li><a href='#'>ЛФК</a></li>
           </ul>
        </li> 
-        <li ><img src={this.state.imageNutrition} alt='nutrition' className='meat'/><a href='#' name ='nutrition' className="reference" onMouseEnter={this.changeColor} onMouseLeave={this.backColor}>Питание</a></li> 
+        <li className='nutrition'><img src={this.state.imageNutrition} alt='nutrition' className='meat'/><a href='#' name ='nutrition' className="reference" onMouseEnter={this.changeColor} onMouseLeave={this.backColor}>Питание</a>
+         <ul className='nutritionDropDownMenu' style={{opacity:this.state.nutritionDropDownMenuOpcity, top:this.state.nutritionDropDownMenuTop}} onMouseEnter={this.nutritionDropDownMenuMouseEnter} onMouseLeave={this.nutritionDropDownMenuMouseLeave}>
+          {nutritionDropDownMenu.map((paragraph, index) => (
+
+          <li  key={index}><a href='#'>{paragraph}</a></li>
+
+          ))}
+         </ul>
+        </li> 
         <li ><img className='list' src={this.state.imageShedul} alt='pict'/> <a href='#'name='shedul' className = "reference" onMouseEnter={this.changeColor} onMouseLeave={this.backColor}>Расписание</a></li> 
    
        </ul>

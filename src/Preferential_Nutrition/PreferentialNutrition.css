@@ -1,0 +1,87 @@
+.preferential_Nutrition{
+
+ 
+display: flex;
+justify-content: space-between;
+height: 700px;
+}
+.preferential_Nutrition_Content{
+
+ width: 50%;
+ margin-top: 100px;
+
+}
+
+.preferential_Nutrition_Content_Container{
+
+ display: flex;
+ flex-direction: column;
+  margin-left: 200px;
+
+
+}
+
+.preferential_Nutrition_Content_Container h2{
+
+ font-size: 40px;
+ font-weight: 500;
+
+}
+
+
+.preferential_Nutrition_Content_Container p{
+
+  font-size: 20px;
+  margin-top: -10px;
+  font-weight: 200;
+ 
+ }
+
+.preferential_Nutrition_Variant{
+
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 600px;
+
+
+}
+
+.preferential_Nutrition_Variant_Item{
+  display: flex;
+  width: 300px;
+
+}
+
+.preferential_Nutrition_Variant_Item_Img{
+  margin-top: 20px;
+
+}
+
+.title_description{
+
+margin-left: 15px;
+
+}
+
+.title_description h3{
+
+font-weight: 500;
+  
+  }
+.title_description p{
+ font-weight: 100;
+
+}
+
+
+
+.preferential_Nutrition_Img{
+  width: 650px;
+  margin-top: 100px;
+  margin-right: 200px;
+  background-image: url('../../public/images/Healthy_food.jpg');
+  background-size: cover;
+  border-radius: 10px;
+  height: 430px;
+}
