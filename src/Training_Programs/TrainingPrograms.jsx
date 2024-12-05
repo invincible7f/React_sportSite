@@ -16,35 +16,38 @@ class TrainingPrograms extends React.Component{
    this.programs = [
 
      { 
-        icon:<Dumbbell color="red" size={this.size}  />,
+        icon:<Dumbbell color="red" size={this.size}   />,
         title: 'Силові тренеровки',   
         description: 'Програми для набору м`язевої масси массы та збільшення сили'
      },
      
      { 
         icon:<Timer color="red" size={this.size}/>,
-        title: 'Кардио',
-        description: 'Эффективные кардио тренировки для сжигания жира'
+        title: 'Кардіо',
+        description: 'Еффективне кардіо для спалення жиру'
      },
 
      { 
         icon:<Trophy color="red" size={this.size}/>,
-        title: 'Соревновательный',
-        description: 'Подготовка к соревнованиям по бодибилдингу'
+        title: 'Змагальний',
+        description: 'Підготовка для змагань з бодібілдінгу'
      },
 
      { 
         icon:<Target color="red" size={this.size}/>,
-        title: 'Персональный',
-        description: 'Индивидуальные программы под ваши цели'
+        title: 'Персональний',
+        description: 'Індивідуальні програми для ваших цілей'
      }
    
     ]
    
  }
   
-    render(){
+  
 
+ 
+
+    render(){
 
 
 
@@ -52,13 +55,13 @@ class TrainingPrograms extends React.Component{
 
         return(
   
-           <section className="trainingPrograms"> 
+           <section className="trainingPrograms" id="targetSection"> 
 
            <h1>Програми тренувань</h1>
              <div className="trainingProgramsContainer"> 
                    
              {this.programs.map((program, index) => (
-                <div key={index} className="mainContainer">
+                <div key={index} className="mainContainer" >
                 <div className="container">
               <div className="programIcon">{program.icon}</div>
               <h3 >{program.title}</h3>

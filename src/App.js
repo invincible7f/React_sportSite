@@ -5,11 +5,17 @@ import React from 'react';
 import Main from './Main/Main'
 
 class App extends React.Component {
+
+ mOnWeel =()=> {
+
+ }
+
+
   render(){
   return (
-    <div className="App">
-      < Navbar/>
-        <Main/>
+    <div className="App" onWheel={this.mOnWeel}>
+      < Navbar key={"navbar"}/>
+        <Main key="h"/>
     </div>
   );
 }
