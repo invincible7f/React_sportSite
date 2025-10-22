@@ -1,58 +1,138 @@
 
 .startingPage{
+  position: relative;
   display: flex;
+  flex-direction:column;
+   flex: 1;
+  width: 100%;
   background-image: url(../../public/images/photo-1534438327276-14e5300c3a48.jpg);
   background-size: cover;
-  height: 945px;
-  
+  background-position: center;
+  min-height: 850px; 
+  height: auto;
+ 
 
 }
 
-.darkLayer{
-position: absolute;
- background-color: black;
- height: 945px;
- width: 100%;
- opacity: 0.4;
- z-index: 0;
 
+.darkLayer{
+  position: absolute;
+ 
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  background-color: rgba(0,0,0,0.45); /* удобнее управлять прозрачностью */
+  z-index: 0;
 }
 
 
 .startingPageContainer{
- position: relative;
- margin: 32px;
- margin-left: 200px;
- margin-top: 200px;
- color: white;
- z-index: 1;
- cursor:default;
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
 
-} 
+  margin-top: 260px; /* будет корректироваться в медиа-запросах */
+  color: white;
+  z-index: 1;
+  cursor: default;
+  padding: 0 190px;
+}
+
+
 
 .startingPageContainer h1{
-
- font-size:70px;
-
-
+  font-size: clamp(28px, 8vw, 70px); /* гибкий размер */
+  margin: 0 0 18px 0;
 }
 
 .startingPageContainer p{
- margin-top: -30px;
- font-size: 25px;
- width: 800px;
-
+  margin-top: 8px;
+  font-size: clamp(14px, 2.2vw, 25px);
+  width: 100%;
+  max-width: 800px;
 }
 
 .startingPageContainer button{
+  display: inline-block;
+  width: auto;
+  padding: 12px 20px;
+  height: auto;
+  margin-top: 16px;
+  border-radius: 8px;
+  font-size: 18px;
+  border: 0;
+  color: white;
+  background-color: rgb(238, 59, 28);
+  cursor: pointer;
+}
 
- width: 200px;
- height: 50px;
- margin-top: 10px;
- border-radius: 8px;
- font-size: 18px;
- border: 0px;
- color: white;
- background-color: rgb(238, 59, 28);
+
+
+@media screen and (max-width:1800px){
+    .startingPage{
+width: 1790px;
+    }
+}
+
+@media screen and (max-width:1600px){
+   .startingPage{
+width: 1780px;
+    }
+}
+
+@media screen and (max-width:1280px){
+     .startingPage{
  
+  width: 1605px;
+  height: 1100px;
+}
+}
+
+
+
+@media screen and (max-width:1024px){
+   .startingPage{
+ 
+    width: 1480px;
+   height: 1100px;
+}
+}
+@media screen and (max-width:720px) {
+ 
+ .startingPage{
+ 
+ width: 1670px;
+  height: 1600px;
+ 
+}
+.startingPageContainer{
+
+         margin-top: 516px;
+        margin-left: 188px;
+}
+.startingPageContainer h1{
+   
+  font-size: 100px;
+  
+}
+
+.startingPageContainer p{
+   margin-top: 40px;
+  font-size: 40px;
+
+}
+
+}
+
+@media screen and (max-width:480px) {
+ 
+ .startingPage{
+ 
+ width: 1520px;
+  height: 1600px;
+ 
+}
+.startingPageContainer{
+
+         margin-top: 516px;
+                      margin-left: -79px;
+}
 }

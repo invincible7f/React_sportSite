@@ -1,3 +1,6 @@
+
+
+
 .trainingPrograms{
  
  height: 500px;
@@ -5,6 +8,7 @@
  background-color: rgb(246, 246, 246);
  display: flex;
  flex-direction: column;
+ cursor: default;
 }
 
 .trainingPrograms h1{
@@ -52,3 +56,319 @@
  font-weight: 200;
 
 }
+
+@media (max-width:1796px){
+
+    .trainingPrograms{
+        width: 1796px;
+        height: 600px;
+    }
+    .trainingPrograms h1{
+         font-size: 55px;
+         margin-top: 100px;
+    }
+    .trainingProgramsContainer{
+
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content:space-between;
+      width:1600px;
+        margin-left: 100px;
+
+      
+
+    }
+    .mainContainer{
+
+        width: 350px;
+        height: 250px;
+        margin: 10px;
+    }
+ 
+
+    .container{
+
+        display: flex;
+        flex-direction: column;
+      
+ 
+      
+    }
+
+    .container p{
+
+     margin-top: -12px;
+     display:block;
+     font-size: large;
+     width: 290px;
+    }
+
+    .container h3{
+      
+       font-size: 25px;
+       
+         
+       }
+
+       .programIcon{
+        display: block;
+        scale: 0.8;
+        margin-left: -35px;
+       }
+}
+@media (max-width:1800px){
+
+    .trainingPrograms{
+        width: 1780px;
+        height: 600px;
+    }
+}
+
+@media (max-width:1600px){
+
+    .trainingPrograms{
+        width: 1780px;
+        height: 600px;
+    }
+}
+
+
+@media (max-width:1280px){
+
+    .trainingPrograms{
+        width: 1605px;
+        height: 600px;
+    }
+    .trainingPrograms h1{
+         font-size: 55px;
+         margin-top: 100px;
+    }
+    .trainingProgramsContainer{
+            flex-wrap: nowrap;
+             flex-direction: row;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+        width: 1605px;
+         margin: 0px
+
+      
+
+    }
+    .mainContainer{
+
+             width: 350px;
+        height: 250px;
+        margin: 10px;
+    }
+ 
+
+    .container{
+
+        display: flex;
+        flex-direction: column;
+      
+ 
+      
+    }
+
+    .container p{
+
+     margin-top: -12px;
+     display:block;
+     font-size: large;
+     width: 290px;
+    }
+
+    .container h3{
+      
+       font-size: 25px;
+       
+         
+       }
+
+       .programIcon{
+        display: block;
+        scale: 0.8;
+        margin-left: -35px;
+       }
+    }
+    
+
+
+
+
+
+
+        @media (max-width:1024px){
+
+            .trainingPrograms{
+                width: 1480px;
+                height: 600px;
+            }
+            .trainingPrograms h1{
+                 font-size: 55px;
+                 margin-top: 20px;
+            }
+            .trainingProgramsContainer{
+        
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content:space-between;
+              width: 650px;
+              margin-left: 465px 
+              
+        
+            }
+            .mainContainer{
+        
+                width: 300px;
+                height: 200px;
+                margin: 10px;
+            }
+         
+        
+            .container{
+        
+                display: flex;
+                flex-direction: column;
+                
+         
+              
+            }
+        
+            .container p{
+        
+             margin-top: -12px;
+             display:block;
+             font-size: large;
+             width: 290px;
+            }
+        
+            .container h3{
+              
+               font-size: 25px;
+               margin-top: ;
+                 
+               }
+    
+               .programIcon{
+                display: block;
+                scale: 0.8;
+                margin-left: -35px;
+               }
+            }
+            
+
+     @media screen and (max-width:720px){
+
+        .trainingPrograms{
+            
+           width: 1670px;
+            height: 1350px;
+            justify-items: center;
+        }
+        .trainingPrograms h1{
+    
+            font-size: 55px;
+            text-align: center;
+        }
+        .trainingProgramsContainer{
+    
+          flex-direction: column;
+           justify-items: center;
+           margin: 0 auto;
+            width: 1670px;
+          
+    
+        }
+        .mainContainer{
+    
+          width: 1670px;
+         height: 250px;
+        }
+     
+    
+        .container{
+    
+            display: flex;
+            flex-direction: column;
+         margin-left: 558px;
+          
+        }
+    
+        .container p{
+            margin-top: -30px;
+            width: 700px;
+                    font-size: 30px;
+                  display:block;
+        }
+    
+        .container h3{
+          
+           font-size: 40px;
+             
+           }
+
+           .programIcon{
+            display: none;
+           }
+        }
+        
+
+            @media (max-width:480px){
+
+               .trainingPrograms{
+            
+        width: 1520px;
+            height: 1350px;
+            justify-items: center;
+        }
+        .trainingPrograms h1{
+    
+            font-size: 55px;
+            text-align: center;
+        }
+        .trainingProgramsContainer{
+    
+          flex-direction: column;
+           justify-items: center;
+           margin: 0 auto;
+            width: 1270px;
+          
+    
+        }
+        .mainContainer{
+    
+         width: 1570px;
+         height: 250px;
+        margin-left: -190px;
+        }
+     
+    
+        .container{
+    
+            display: flex;
+            flex-direction: column;
+            
+         
+          
+        }
+    
+        .container p{
+            margin-top: -30px;
+            width: 700px;
+            font-size: 30px;
+                  display:block;
+        }
+    
+        .container h3{
+          
+           font-size: 40px;
+             margin-left: 0px;
+           }
+
+           .programIcon{
+            display: none;
+           }
+                }
+            

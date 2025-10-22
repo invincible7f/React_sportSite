@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css'
 import { User } from 'lucide-react';
 import Flying_Window from '../Flying_Window/Flying_Window';
-
+import { Menu } from 'lucide-react';
 // import DropdownMenu from '../dropdownMenu/DropdownMenu';
 
 class Navbar extends React.Component{
@@ -18,6 +18,8 @@ class Navbar extends React.Component{
   imageShedul:'images/shedul.png',
   flyingWindowTop:'-500px',
   flyingWindowOpacity:0,
+  show:false,
+
 
   }
 
@@ -97,7 +99,7 @@ backColor = (e)=>{
 
  scrollTarget = (e)=>{
   
-  if(e.target.name == 'trainings'){
+  if(e.target.name === 'trainings'){
   window.scrollTo({
   
   top:800,
@@ -108,7 +110,7 @@ backColor = (e)=>{
 
 
 }
-else if(e.target.name =='nutrition' ){
+else if(e.target.name ==='nutrition' ){
 
   window.scrollTo({
   
@@ -119,7 +121,7 @@ else if(e.target.name =='nutrition' ){
 
 }
 
-else if(e.target.name =='shedul' ){
+else if(e.target.name ==='shedul' ){
 
   window.scrollTo({
   
@@ -154,12 +156,22 @@ else if(e.target.name =='shedul' ){
 
  }
 
+ menuToggle=()=>{
+ this.setState(prev => ({
+    show: !prev.show,
+    showMenu: !prev.show ? 'flex' : 'none'
+  }));
+   
+ }
+
 render(){
 
 
     return(
      <nav>
       <Flying_Window m_top ={this.state.flyingWindowTop} fw_opacity ={this.state.flyingWindowOpacity} />
+      <div className='container-nav'>
+        <div className='burger'  onClick={this.menuToggle}> <Menu color='white' size={70}/> </div>
       <div className='LogoName'>
        <img  src='images/1118213_dumbbell_exercise_fitness_muscle_weight_icon2.png' alt='picture'/>
         <h2>FitPower</h2>
@@ -180,6 +192,7 @@ render(){
        </ul>
        <button type='submit' onMouseEnter={this.buttonBacklight} onMouseLeave={this.buttonBack} onClick={this.showWindow}> Війти</button>
        </div>
+      </div>
      </nav>
      
     

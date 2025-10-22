@@ -4,6 +4,8 @@ justify-content: center;
  position: absolute;
  width: 100%;
  transition: 0.4s;
+ left: -10px;
+ z-index: 1000;
 
  /* margin-top: 150px; */
  /* background-color: aqua; */
@@ -74,4 +76,44 @@ flex-direction: column;
   margin-right:150px;
     margin-top: 30px;
     border: 0px;
+}
+
+
+@media screen and (max-width:1600px){
+.flyingWindow{
+   left: 120px;
+   top:  10px;
+}
+}
+
+
+
+@media screen and (max-width:1280px){
+.flyingWindow{
+   left: 190px;
+   top:  10px;
+}
+}
+
+
+@media screen and (max-width:1024px){
+.flyingWindow{
+   left: 370px;
+   top:  100px;
+}
+}
+
+@media screen and (max-width:720px){
+.flyingWindow{
+   left: 450px;
+   top:  300px;
+}
+}
+
+@media screen and (max-width:480px){
+.flyingWindow{
+   left: 450px;
+   top:  300px;
+}
+
 }

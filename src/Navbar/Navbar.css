@@ -1,112 +1,312 @@
-nav {
-  position: fixed;
-  display: flex;
-  width: 100vw;
-  height: 80px;
-  background-color: #151515;
-  flex-wrap: wrap;
-  cursor: default;
-  z-index: 7; }
 
-.LogoName {
-  position: absolute;
+nav{
+  width: 100%;
+  height: 64px;
+  box-sizing: border-box;
+  background-color: rgb(24, 24, 24);
+  padding: 0 190px;
+  overflow: hidden;
+}
+.container-nav{
+  width: 100%;
+  max-width: 1920px;
+  height: 64px;
   display: flex;
-  margin: 20px;
-  margin-left: 200px;
-  margin-top: 25px;
-  width: 200px;
-  height: 40px; }
-  .LogoName img {
-    margin-top: 0px;
-    rotate: 50deg; }
-  .LogoName h2 {
-    margin-top: 0px;
-    color: white; }
+  justify-content: space-between;
+  align-items:center;
+  gap: 10px;
+   z-index: 10;
+}
+
+.burger{
+
+ display: none;
+}
+
+.LogoName{
+
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.1em;
+ 
+}
+
+.LogoName img{
+ height:33px ;
+ width: 33px;
+  transform: rotate(50deg) ;
+  display: inline-block;
+}
+
 
 .navMenu {
+ 
   display: flex;
-  margin-left: 1000px; }
-  .navMenu li {
-    cursor: pointer;
-    display: inline;
-    margin: 20px;
-    position: relative;
-    top: -5px; }
-    .navMenu li img {
-      rotate: 50deg;
-      scale: 0.4; }
-    .navMenu li .reference {
-      position: relative;
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-      top: -27px;
-      left: -15px; }
-    .navMenu li .list {
-      rotate: 0deg; }
-  .navMenu button {
-    height: 40px;
-    width: 110px;
-    text-align: center;
-    border-radius: 5px;
-    font-size: 16px;
-    border: 0px;
-    margin-top: 22px;
-    background-color: #ee3b1c;
-    color: white; }
+  align-items: center;
+  gap: 5px;
+}
 
-.dropDownMenu {
+.navMenu ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.navMenu ul li{
+  position: relative;
+  display: flex;
+  width: 140px;
+  gap: 3px;
+
+  align-items: center;
+
+
+  
+ 
+}
+
+.navMenu ul li img{
   display: block;
-  position: absolute;
-  width: 150px;
-  height: 300px;
-  left: 40px;
-  background-color: #151515;
-  z-index: 5; }
-  .dropDownMenu li {
-    height: 50px;
-    width: 190px;
-    top: 20px;
-    font-size: 18px;
-    text-align: left;
-    display: block;
-    padding-top: 2px;
-    margin-left: -40px;
-    border-bottom: 1px solid white; }
-  .dropDownMenu a {
-    position: relative;
-    text-decoration: none;
-    margin-left: 10px;
-    top: 3px;
-    color: white; }
+  margin-left: 28px; 
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  background-color: transparent; 
+  transform: rotate(50deg) ; 
+  
+  
+}
 
-.nutrition {
-  position: relative; }
-
-.nutritionDropDownMenu {
+.navMenu ul li a{
   display: block;
-  position: absolute;
-  width: 150px;
-  height: 300px;
-  margin-left: 0px;
-  left: 0px;
-  background-color: #151515;
-  z-index: 5; }
-  .nutritionDropDownMenu li {
-    height: 50px;
-    width: 190px;
-    top: 20px;
-    font-size: 18px;
-    text-align: left;
-    display: block;
-    padding-top: 2px;
-    margin-left: -40px;
-    border-bottom: 1px solid white; }
-    .nutritionDropDownMenu li a {
-      position: relative;
-      text-decoration: none;
-      margin-left: 10px;
-      top: 3px;
-      color: white; }
+  color: white;
+  text-decoration: none;
+  margin-right: 28px;
+}
+.navMenu button{
+  display: flex;               
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-top: 4px;           
+  height: 30px;                
+  padding: 10px 30px; 
+  color: white; 
+  font-size: 1em;            
+  border: 0;
+  border-radius: 4px;
+  background-color: rgb(238, 59, 28);
+  flex: 0 0 40px;             
+  cursor: pointer;
+ 
+}
 
-/*# sourceMappingURL=Navbar.css.map */
+@media screen and (max-width:1700px){
+    nav{
+width: 1790px;
+    }
+}
+
+@media screen and (max-width:1600px){
+    nav{
+width: 1780px;
+    }
+}
+@media screen and (max-width:1280px){
+    nav{
+width: 1605px;
+
+}
+}
+
+
+
+@media screen and (max-width:1024px) {
+  nav{
+    width: 1480px;
+  height: 64px;
+  box-sizing: border-box;
+  background-color: rgb(24, 24, 24);
+  padding: 0 190px;
+}
+.navMenu ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px
+
+}
+.navMenu ul li{
+  position: relative;
+  display: flex;
+  width: 140px;
+  gap: 3px;
+  font-size: 20px;
+
+  align-items: center;
+
+
+  
+ 
+}
+.navMenu button{
+        
+  height: 40px;                
+  padding: 10px 30px; 
+
+  font-size: 1.4em;            
+
+ 
+}
+
+}
+
+@media screen and (max-width:720px) {
+  nav{
+ 
+ width: 1670px;
+  height: 8vh;
+  box-sizing: border-box;
+  background-color: rgb(24, 24, 24);
+  padding: 0 74px;
+  height: 200px;
+}
+
+.LogoName h2{
+
+  display: none;
+
+ 
+}
+.LogoName img{
+ height:120px ;
+ width: 120px;
+ transform: rotate(0deg) ;
+
+}
+.container-nav{
+  width: 100%;
+  max-width: 1920px;
+  height: 164px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+
+}
+
+.navMenu ul {
+  position: relative;
+  display: flex;
+ justify-content: center;
+  align-items: center;
+  height: 100%;
+margin-right: 258px;
+  gap: 160px;
+
+}
+
+.navMenu ul li{
+  position: relative;
+  display: flex;
+  width: 140px;
+  gap: 10px;
+ 
+  align-items: center;
+ font-size: 40px;
+  
+ 
+}
+.navMenu ul li img{
+  display: block;
+  margin-left: 28px; 
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  background-color: transparent; 
+  transform: rotate(50deg) ; 
+  
+  
+}
+.navMenu button{
+  display: flex;               
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-top: 4px;   
+  margin-left: 77px;        
+  height: 30px;                
+ padding: 37px 48px;
+    color: white;
+  font-size: 2em;            
+  border: 0;
+  border-radius: 4px;
+  background-color: rgb(238, 59, 28);
+  flex: 0 0 40px;             
+  cursor: pointer;
+ 
+}
+}
+
+@media screen and (max-width:480px) {
+  nav{
+ 
+width: 1520px;
+  height: 8vh;
+  box-sizing: border-box;
+  background-color: rgb(24, 24, 24);
+  padding: 0 74px;
+  height: 200px;
+}
+
+.LogoName img{
+ height:120px ;
+ width: 120px;
+ transform: rotate(90deg) ;
+
+}
+.navMenu ul {
+  position: relative;
+  display: flex;
+ justify-content: center;
+  align-items: center;
+  height: 100%;
+margin-right: 390px;
+  gap: 160px;
+
+}
+.navMenu ul li{
+  position: relative;
+  display: flex;
+  width: 140px;
+  gap: 10px;
+ 
+  align-items: center;
+ font-size: 40px;
+  
+ 
+}
+.navMenu{
+        margin-left: -47px;
+
+}
+.navMenu button{
+  
+margin-top: 17px;        
+  height: 30px;                
+    padding: 35px 30px;
+  color: white; 
+        font-size: 1.8em;          
+  border: 0;
+  border-radius: 4px;
+  background-color: rgb(238, 59, 28);
+  flex: 0 0 40px;             
+  cursor: pointer;
+ margin-left: -135px;
+}
+
+}

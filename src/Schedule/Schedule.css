@@ -1,5 +1,7 @@
 #schedule{
-
+display: flex;
+justify-content: center;
+align-items: center;
  height: 650px;
  background-color: rgb(246, 246, 246);
  
@@ -7,9 +9,10 @@
 
 #schedule_container{
 
- margin-left: 200px;
- margin-right: 200px;
+
  display: flex;
+ justify-content: center;
+ align-items: center;
  flex-direction: column;
 }
 
@@ -36,16 +39,17 @@
 .training_schedul_sections ul{
 
  display: flex;
+ gap: 300px;
  justify-content: space-between;
  margin-right: 400px;
- 
+
 
 
 
 }
 .training_schedul_sections ul li {
 
-    display: inline;
+    display: inline-block;
     color:white;
     margin: 20px;
 
@@ -56,7 +60,7 @@
 .schedul_item{
  display: grid;
  grid-template-areas: "time class trainer";
- grid-template-columns: 464px 516px 1fr;
+ grid-template-columns: 390px 440px 1fr;
  border-bottom-left-radius: 10px; 
  border-bottom-right-radius: 10px;
  background-color: aqua;
@@ -102,4 +106,146 @@
 
  grid-area: trainer;
  
+ 
 }
+
+
+
+@media (max-width:1800px){
+
+
+
+  #schedule{
+  
+    width: 1790px;
+  
+  }
+  
+  .schedul_item{
+    grid-template-columns: 410px 465px 1fr;
+  
+  }
+  
+  .training_schedul_sections ul{
+  gap: 150px;
+  }
+   
+
+}
+
+
+@media (max-width:1600px){
+
+     #schedule{
+        width: 1780px;
+        height: 600px;
+    }
+}
+
+
+
+@media(max-width:1280px){
+
+  #schedule{
+  
+    width: 1605px;
+  
+  }
+  #schedule_container{
+
+    margin-left: 100px;
+  }
+  
+  .schedul_item{
+    grid-template-columns: 245px 292px 1fr;
+  
+  }
+  
+  .training_schedul_sections ul{
+  gap: 150px;
+  }
+  
+  }
+
+
+
+
+
+@media(max-width:1024px){
+
+  #schedule{
+  
+       width: 1480px
+  
+  }
+  #schedule_container{
+
+    margin-left: 100px;
+  }
+  
+  .schedul_item{
+    grid-template-columns: 245px 292px 1fr;
+  
+  }
+  
+  .training_schedul_sections ul{
+  gap: 150px;
+  }
+  
+  }
+
+
+
+@media(max-width:720px){
+
+  #schedule{
+  
+    width: 1680px;
+
+  
+  }
+        #schedule_container{
+
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ margin-left: 100px;
+ 
+}
+  
+  .schedul_item{
+    grid-template-columns: 245px 292px 1fr;
+  
+  }
+  
+  .training_schedul_sections ul{
+  gap: 150px;
+  }
+  
+  }
+
+
+
+
+
+    @media(max-width:480px){
+
+      #schedule{
+      
+ width: 1520px;
+      
+      }
+
+      
+      .schedul_item{
+        grid-template-columns: 245px 292px 1fr;
+      
+      }
+      .training_schedul_sections ul{
+      gap: 150px;
+      }
+      
+      }
+      
